@@ -109,7 +109,7 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message" data-testid="message">Message</label>
           <textarea
             onChange={handleChange}
             name="message"
@@ -121,7 +121,7 @@ const ContactForm = () => {
 
         {displayData && <DisplayComponent form={form}/>}
 
-        <input type="submit" />
+        <input type="submit" data-testid="submitButton"/>
       </form>
     </div>
   );
